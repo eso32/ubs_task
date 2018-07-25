@@ -1,0 +1,57 @@
+:host{
+    width: 20%;
+    height: 150px;
+    display: inline-block;
+    border: 1px solid black;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-bottom: 10px;
+    .currency-pair-header{
+        background-color: grey;
+        color: white;
+        text-align: center;
+        font-weight: 900;
+        min-height: 20%;
+    }
+    .currency-pair-body{
+        background-color: blue;
+        
+        text-align: center;
+        min-height: 80%;
+        position: relative;
+    }
+    span.left-currency{
+        display: inline-block;
+        height: 40%;
+        width: 44%;
+        position: absolute;
+        left: 10px;
+        top: 10px;        
+        .bg{
+            width:100%;
+            height:100%;
+        }
+        .content{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+    }
+    span.right-currency{
+        display: inline-block;
+        height: 40%;
+        width: 44%;
+        position: absolute;
+        right: 10px;
+        top: 10px;        
+        .bg{
+            width:100%;
+            height:100%;
+        }
+        .content{
+            position: absolute;
+            right: 0px;
+            top: 0px;
+        }
+    }
+}

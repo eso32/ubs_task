@@ -1,20 +1,10 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<h1>Trading app</h1>
+<app-currency-pair *ngFor="let currency of data" [pair]="currency.pair" [buy]="currency.buy" [sell]="currency.sell">
+</app-currency-pair>
 
+<hr/>
+<svg>
+  <path style="color:#000000;line-height:normal;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#acacac;stroke-width:0.79938364;"
+    d="M 4.9711352,0.39969604 A 4.5718996,4.0085325 0 0 0 0.39969183,4.407828 l 0,36.184349 a 4.5718996,4.0085325 0 0 0 4.57144337,4.008131 l 87.0252588,0 a 4.5718996,4.0085325 0 0 0 3.075004,-1.041174 L 114.03932,28.450357 a 4.5718996,4.0085325 0 0 0 1.49823,-2.929381 l 0.0625,-5.951137 a 4.5718996,4.0085325 0 0 0 -1.5679,-3.060897 C 106.52054,10.7732 100.56223,6.399369 93.875012,1.379811 A 4.5718996,4.0085325 0 0 0 90.903578,0.41535304 l -85.9324068,-0.01566 z"
+  />
+</svg>
