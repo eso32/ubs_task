@@ -15,7 +15,10 @@
    width="116"
    height="45"
    viewBox="0 0 116 45"
-   sodipodi:docname="right.svg">
+   sodipodi:docname="right.svg"
+   inkscape:export-filename="/home/tomek/Documents/UBS_TASK/fx-trading/src/assets/right.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <metadata
      id="metadata3412">
     <rdf:RDF>
@@ -39,12 +42,12 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1440"
-     inkscape:window-height="867"
+     inkscape:window-width="1680"
+     inkscape:window-height="1017"
      id="namedview3408"
      showgrid="false"
      inkscape:zoom="3.1570083"
-     inkscape:cx="101.12877"
+     inkscape:cx="100.65364"
      inkscape:cy="25.075283"
      inkscape:window-x="1366"
      inkscape:window-y="0"

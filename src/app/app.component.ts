@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'app';
-  data: Object[];
+  data: any;
 
   ngOnInit(): void {
     this.data = [
@@ -18,5 +18,18 @@ export class AppComponent implements OnInit {
       { pair: "USD JPY", buy: 110.467, sell: 110.417 },
       { pair: "EUR JPY", buy: 120.589, sell: 120.491 }
     ]
+
+    setInterval(() => {
+      this.data.forEach(pair => {
+        pair.sell = Math.random();
+        pair.buy = Math.random();
+      })
+    }, 1000)
+  }
+
+  randomizeValues() {
+    this.data.forEach(pair => {
+      pair.sell = Math.random();
+    })
   }
 }

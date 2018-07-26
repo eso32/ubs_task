@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Montserrat|PT+Sans');
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.first-part{
+    font-size: 20px;
+}
+.second-part{
+    font-size: 30px;
+    font-weight: 900;
+}
+.third-part{
+    font-size: 20px;
+    position: relative;
+    top: -12px;
+}
