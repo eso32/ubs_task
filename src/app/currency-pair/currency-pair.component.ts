@@ -1,11 +1,12 @@
-import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnChanges, Input, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-currency-pair',
   templateUrl: './currency-pair.component.html',
   styleUrls: ['./currency-pair.component.scss']
 })
-export class CurrencyPairComponent implements OnInit {
+export class CurrencyPairComponent implements OnChanges {
+
   @Input()
   pair: string;
 
@@ -28,10 +29,14 @@ export class CurrencyPairComponent implements OnInit {
   rightContent: ElementRef;
 
   sellFormated: HTMLElement;
+  increasing: boolean;
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnChanges(changes: any): void {
+    let { currentValue, previousValue } = changes.buy;
+
+    this.increasing = (currentValue - previousValue) > 0;
 
   }
 
@@ -49,6 +54,9 @@ export class CurrencyPairComponent implements OnInit {
     this.rightContent.nativeElement.style.color = color3;
   }
 
+  changeBool() {
+    this.increasing = !this.increasing;
+  }
 
 }
 
