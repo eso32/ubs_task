@@ -29,4 +29,13 @@ describe('AppComponent', () => {
     const app = fixture.debugElement.componentInstance;
     expect(app.title).toEqual('app');
   }));
+  it(`should generate proper random value`, async(() => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.debugElement.componentInstance;
+    let price = 10;
+    let result = price + app.randomizeValue(price);
+
+    expect(result).toBeGreaterThan(9);
+    expect(result).toBeLessThan(11);
+  }))
 });

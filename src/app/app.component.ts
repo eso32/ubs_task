@@ -1,14 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
+import { CurrencyPair } from '../model/CurrencyPair.model';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'app';
-  data: any;
-  baseData;
+  title: string = 'app';
+  data: CurrencyPair[];
+  baseData: CurrencyPair[];
 
   ngOnInit(): void {
     this.baseData = [

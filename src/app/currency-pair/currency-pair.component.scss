@@ -42,10 +42,10 @@ $ubs-green: #5d9120;
             path {
                 stroke-width: 0px; 
                 &.decrease-red{
-                    fill: red;
+                    fill: $ubs-red;
                 }
                 &.increase-green{
-                    fill: green;
+                    fill: $ubs-green;
                 }                
             }
         }
