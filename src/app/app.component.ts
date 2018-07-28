@@ -19,6 +19,7 @@ export class AppComponent implements OnInit {
       { pair: "USD JPY", buy: 110.467, sell: 110.417 },
       { pair: "EUR JPY", buy: 120.589, sell: 120.491 }
     ];
+
     this.data = [...this.baseData];
 
     setInterval(() => {

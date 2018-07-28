@@ -2,18 +2,8 @@
   {{pair}}
 </div>
 <div class="currency-pair-body">
-  <span class="left-currency">
-    <svg style="width: 100%; height: 100%;" viewBox="0 0 116 45" preserveAspectRatio="none">
-      <path #leftPath class="obraz" d="M 4.9711352,0.39969604 A 4.5718996,4.0085325 0 0 0 0.39969183,4.407828 l 0,36.184349 a 4.5718996,4.0085325 0 0 0 4.57144337,4.008131 l 87.0252588,0 a 4.5718996,4.0085325 0 0 0 3.075004,-1.041174 L 114.03932,28.450357 a 4.5718996,4.0085325 0 0 0 1.49823,-2.929381 l 0.0625,-5.951137 a 4.5718996,4.0085325 0 0 0 -1.5679,-3.060897 C 106.52054,10.7732 100.56223,6.399369 93.875012,1.379811 A 4.5718996,4.0085325 0 0 0 90.903578,0.41535304 l -85.9324068,-0.01566 z"
-      />
-    </svg>
-    <div class="content" (mouseenter)="changeBgLeft('red', '#3aabc9','white', '2')" (mouseleave)="changeBgLeft('white', '#acacac', 'red', '0.7')"
-      #leftContent>
-      <span class="label-sell">Sell USD</span>
-      <div class="value-sell" [format-rate]="sell">
-      </div>
-    </div>
-  </span>
+
+  <app-sell-label [sell]="sell"></app-sell-label>
 
   <div class="triangle">
     <svg viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -22,16 +12,6 @@
     </svg>
   </div>
 
-  <span class="right-currency">
-    <svg style="width: 100%; height: 100%;" viewBox="0 0 116 45" preserveAspectRatio="none">
-      <path #rightPath class="obraz" d="m 111.02882,0.39969604 a 4.5718996,4.0085325 0 0 1 4.57144,4.00813196 l 0,36.184349 a 4.5718996,4.0085325 0 0 1 -4.57144,4.008131 l -87.025257,0 A 4.5718996,4.0085325 0 0 1 20.928559,43.559134 L 1.9606368,28.450357 A 4.5718996,4.0085325 0 0 1 0.46240682,25.520976 l -0.0625,-5.951137 A 4.5718996,4.0085325 0 0 1 1.9678068,16.508942 C 9.4794168,10.7732 15.437727,6.399369 22.124945,1.379811 a 4.5718996,4.0085325 0 0 1 2.971434,-0.96445796 l 85.932411,-0.01566 z"
-      />
-    </svg>
-    <div class="content" (mouseenter)="changeBgRight('green', '#3aabc9','white', '2')" (mouseleave)="changeBgRight('white', '#acacac', 'green', '0.7')"
-      #rightContent>
-      <span class="label-buy">Buy USD</span>
-      <div class="value-buy" [format-rate]="buy">
-      </div>
-    </div>
-  </span>
+  <app-buy-label [buy]="buy"></app-buy-label>
+
 </div>

@@ -1,0 +1,12 @@
+<span class="right-currency">
+  <svg style="width: 100%; height: 100%;" viewBox="0 0 116 45" preserveAspectRatio="none">
+    <path #rightPath class="obraz" d="m 111.02882,0.39969604 a 4.5718996,4.0085325 0 0 1 4.57144,4.00813196 l 0,36.184349 a 4.5718996,4.0085325 0 0 1 -4.57144,4.008131 l -87.025257,0 A 4.5718996,4.0085325 0 0 1 20.928559,43.559134 L 1.9606368,28.450357 A 4.5718996,4.0085325 0 0 1 0.46240682,25.520976 l -0.0625,-5.951137 A 4.5718996,4.0085325 0 0 1 1.9678068,16.508942 C 9.4794168,10.7732 15.437727,6.399369 22.124945,1.379811 a 4.5718996,4.0085325 0 0 1 2.971434,-0.96445796 l 85.932411,-0.01566 z"
+    />
+  </svg>
+  <div class="content" (mouseenter)="changeBgRight('green', '#3aabc9','white', '2')" (mouseleave)="changeBgRight('white', '#acacac', 'green', '0.7')"
+    #rightContent>
+    <span class="label-buy">Buy USD</span>
+    <div class="value-buy" [format-rate]="buy">
+    </div>
+  </div>
+</span>
